@@ -8,3 +8,8 @@
 ## 2. Essay and Poem Generation with LangChain
   * Sets up a FastAPI server with routes to generate essays and poems using LangChain and LLMs (ChatOpenAI and OllamaLLM).
   * Defines prompts and connects them to endpoints (/essay and /poem), making them accessible for API requests.
+
+## 3. Simple RAG Pipeline
+  * Load data from data source.
+  * Split data into chunks.
+  * Convert chunked data into vector embeddings and store them in FAISS vector database.

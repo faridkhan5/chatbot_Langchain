@@ -10,6 +10,14 @@
   * Defines prompts and connects them to endpoints (/essay and /poem), making them accessible for API requests.
 
 ## 3. Simple RAG Pipeline
-  * Load data from data source.
-  * Split data into chunks.
-  * Convert chunked data into vector embeddings and store them in FAISS vector database.
+  * Loads data from data source.
+  * Splits data into chunks.
+  * Converts chunked data into vector embeddings and store them in FAISS vector store.
+
+## 4. Retrieval Chain
+  * Loads, splits, coverts documents and stores their vector embbedings in a FAISS vector store.
+  * Initializes an Ollama LLM (llama2) and a ChatPromptTemplate for context-based question answering.
+  * Creates a document chain to combine retrieved documents with the LLM and prompt.
+  * Set up a retriever to fetch relevant documents from a vector store (db).
+  * Combines the retriever and document chain to create a retrieval chain.
+  * Executes the retrieval chain to process the query and generate a response.

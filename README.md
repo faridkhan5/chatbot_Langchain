@@ -22,7 +22,7 @@
   * Combines the retriever and document chain to create a retrieval chain.
   * Executes the retrieval chain to process the query and generate a response.
 
-## 5. RAG Pipeline with multiple tools
+## 5. RAG Pipeline with Multiple Tools
   * Creates specialized tools for retrieving information from LangSmith (retriever_tool), Wikipedia (wiki), and ArXiv (arxiv), each with tailored constraints.
   * Combines a ChatOpenAI model with the tools using a pre-defined prompt from Hugging Face, enabling the agent to reason and utilize the tools effectively.
   * Constructs an agent using create_openai_tools_agent, allowing dynamic interaction between the LLM and tools for answering queries.
